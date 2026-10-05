@@ -1,0 +1,286 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Email design preview</title>
+</head>
+<body style="margin:0;padding:0;background-color:#f2f2f2;">
+
+<!--
+  DESIGN REFERENCE for the subscription tracker emails (minimal / statement style).
+  The outer grey page and the "PREVIEW" labels exist only for this preview file.
+  The real emails are the two white blocks.
+
+  Design tokens
+    font          -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif
+    text          #1a1a1a
+    secondary     #666666
+    muted/past    #999999
+    rules         #e6e6e6 (1px), totals use #1a1a1a (1px)
+    column width  560px, centred, text left-aligned
+    no colour accents, no pills, no cards, no rounded corners, no images, no bars
+    amounts       right-aligned, same size as the row text
+  Sample data = the seeded dev database as of Sun 4 Oct 2026.
+-->
+
+<p style="font-family:Arial,Helvetica,sans-serif;font-size:12px;color:#888888;margin:0;padding:16px 16px 8px 16px;">PREVIEW: email 1 of 2, the alert</p>
+
+<!-- ============================================================ -->
+<!-- EMAIL 1: ALERT                                                -->
+<!-- ============================================================ -->
+
+<div style="display:none;max-height:0;overflow:hidden;opacity:0;color:transparent;font-size:1px;line-height:1px;">
+  Netflix tomorrow, Showmax and Weekly veg box in 2 days. R483.00 in total.
+</div>
+
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background-color:#ffffff;">
+  <tr>
+    <td align="center" style="padding:36px 20px 40px 20px;">
+
+      <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="max-width:560px;width:100%;font-family:-apple-system,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;color:#1a1a1a;text-align:left;">
+
+        <tr>
+          <td style="font-size:20px;line-height:28px;font-weight:600;color:#1a1a1a;padding-bottom:4px;">
+            Upcoming subscription charges
+          </td>
+        </tr>
+        <tr>
+          <td style="font-size:14px;line-height:21px;color:#666666;padding-bottom:24px;">
+            3 subscriptions will charge your account in the next 2 days, R483.00 in total.
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+            <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
+
+              <tr>
+                <td style="padding:14px 0;border-top:1px solid #e6e6e6;" valign="top">
+                  <div style="font-size:15px;line-height:22px;color:#1a1a1a;">Netflix</div>
+                  <div style="font-size:13px;line-height:19px;color:#666666;">Mon 5 Oct, tomorrow</div>
+                </td>
+                <td align="right" style="padding:14px 0;border-top:1px solid #e6e6e6;font-size:15px;line-height:22px;color:#1a1a1a;" valign="top">R199.00</td>
+              </tr>
+
+              <tr>
+                <td style="padding:14px 0;border-top:1px solid #e6e6e6;" valign="top">
+                  <div style="font-size:15px;line-height:22px;color:#1a1a1a;">Showmax</div>
+                  <div style="font-size:13px;line-height:19px;color:#666666;">Tue 6 Oct, in 2 days</div>
+                </td>
+                <td align="right" style="padding:14px 0;border-top:1px solid #e6e6e6;font-size:15px;line-height:22px;color:#1a1a1a;" valign="top">R99.00</td>
+              </tr>
+
+              <tr>
+                <td style="padding:14px 0;border-top:1px solid #e6e6e6;" valign="top">
+                  <div style="font-size:15px;line-height:22px;color:#1a1a1a;">Weekly veg box</div>
+                  <div style="font-size:13px;line-height:19px;color:#666666;">Tue 6 Oct, in 2 days</div>
+                </td>
+                <td align="right" style="padding:14px 0;border-top:1px solid #e6e6e6;font-size:15px;line-height:22px;color:#1a1a1a;" valign="top">R185.00</td>
+              </tr>
+
+              <!-- total -->
+              <tr>
+                <td style="padding:14px 0 0 0;border-top:1px solid #1a1a1a;font-size:15px;line-height:22px;font-weight:600;color:#1a1a1a;">Total</td>
+                <td align="right" style="padding:14px 0 0 0;border-top:1px solid #1a1a1a;font-size:15px;line-height:22px;font-weight:600;color:#1a1a1a;">R483.00</td>
+              </tr>
+
+            </table>
+          </td>
+        </tr>
+
+        <tr>
+          <td style="font-size:14px;line-height:21px;color:#666666;padding-top:28px;">
+            Pause or cancel anything you no longer use before its date.
+          </td>
+        </tr>
+
+      </table>
+
+    </td>
+  </tr>
+</table>
+
+
+<p style="font-family:Arial,Helvetica,sans-serif;font-size:12px;color:#888888;margin:0;padding:24px 16px 8px 16px;">PREVIEW: email 2 of 2, the monthly summary</p>
+
+<!-- ============================================================ -->
+<!-- EMAIL 2: MONTHLY SUMMARY                                      -->
+<!-- ============================================================ -->
+
+<div style="display:none;max-height:0;overflow:hidden;opacity:0;color:transparent;font-size:1px;line-height:1px;">
+  R1,836.98 due this month across 8 active subscriptions.
+</div>
+
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background-color:#ffffff;">
+  <tr>
+    <td align="center" style="padding:36px 20px 40px 20px;">
+
+      <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="max-width:560px;width:100%;font-family:-apple-system,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;color:#1a1a1a;text-align:left;">
+
+        <tr>
+          <td style="font-size:20px;line-height:28px;font-weight:600;color:#1a1a1a;padding-bottom:4px;">
+            Monthly subscription summary
+          </td>
+        </tr>
+        <tr>
+          <td style="font-size:14px;line-height:21px;color:#666666;padding-bottom:28px;">
+            Your subscription spending for October 2026, across 8 active subscriptions.
+          </td>
+        </tr>
+
+        <!-- two figures, no boxes -->
+        <tr>
+          <td style="padding-bottom:32px;">
+            <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
+              <tr>
+                <td width="50%" valign="top">
+                  <div style="font-size:13px;line-height:19px;color:#666666;">Due this month</div>
+                  <div style="font-size:24px;line-height:32px;font-weight:600;color:#1a1a1a;">R1,836.98</div>
+                  <div style="font-size:12px;line-height:18px;color:#999999;">what actually gets charged</div>
+                </td>
+                <td width="50%" valign="top">
+                  <div style="font-size:13px;line-height:19px;color:#666666;">Monthly average</div>
+                  <div style="font-size:24px;line-height:32px;font-weight:600;color:#1a1a1a;">R2,156.90</div>
+                  <div style="font-size:12px;line-height:18px;color:#999999;">weekly and yearly plans, spread evenly</div>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+
+        <!-- charges -->
+        <tr>
+          <td style="font-size:14px;line-height:21px;font-weight:600;color:#1a1a1a;padding-bottom:2px;">
+            Charges this month
+          </td>
+        </tr>
+        <tr>
+          <td style="font-size:13px;line-height:19px;color:#666666;padding-bottom:10px;">
+            Every charge that falls in October. Grey rows have already been charged.
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
+
+              <!-- already charged: grey -->
+              <tr>
+                <td width="90" style="padding:10px 0;border-top:1px solid #e6e6e6;font-size:14px;line-height:20px;color:#999999;" valign="top">Thu 1 Oct</td>
+                <td style="padding:10px 0;border-top:1px solid #e6e6e6;font-size:14px;line-height:20px;color:#999999;" valign="top">Virgin Active</td>
+                <td align="right" style="padding:10px 0;border-top:1px solid #e6e6e6;font-size:14px;line-height:20px;color:#999999;" valign="top">R649.00</td>
+              </tr>
+
+              <tr>
+                <td width="90" style="padding:10px 0;border-top:1px solid #e6e6e6;font-size:14px;line-height:20px;color:#666666;" valign="top">Mon 5 Oct</td>
+                <td style="padding:10px 0;border-top:1px solid #e6e6e6;font-size:14px;line-height:20px;color:#1a1a1a;" valign="top">Netflix</td>
+                <td align="right" style="padding:10px 0;border-top:1px solid #e6e6e6;font-size:14px;line-height:20px;color:#1a1a1a;" valign="top">R199.00</td>
+              </tr>
+
+              <tr>
+                <td width="90" style="padding:10px 0;border-top:1px solid #e6e6e6;font-size:14px;line-height:20px;color:#666666;" valign="top">Tue 6 Oct</td>
+                <td style="padding:10px 0;border-top:1px solid #e6e6e6;font-size:14px;line-height:20px;color:#1a1a1a;" valign="top">Showmax</td>
+                <td align="right" style="padding:10px 0;border-top:1px solid #e6e6e6;font-size:14px;line-height:20px;color:#1a1a1a;" valign="top">R99.00</td>
+              </tr>
+
+              <tr>
+                <td width="90" style="padding:10px 0;border-top:1px solid #e6e6e6;font-size:14px;line-height:20px;color:#666666;" valign="top">Tue 6 Oct</td>
+                <td style="padding:10px 0;border-top:1px solid #e6e6e6;font-size:14px;line-height:20px;color:#1a1a1a;" valign="top">Weekly veg box</td>
+                <td align="right" style="padding:10px 0;border-top:1px solid #e6e6e6;font-size:14px;line-height:20px;color:#1a1a1a;" valign="top">R185.00</td>
+              </tr>
+
+              <tr>
+                <td width="90" style="padding:10px 0;border-top:1px solid #e6e6e6;font-size:14px;line-height:20px;color:#666666;" valign="top">Tue 13 Oct</td>
+                <td style="padding:10px 0;border-top:1px solid #e6e6e6;font-size:14px;line-height:20px;color:#1a1a1a;" valign="top">Weekly veg box</td>
+                <td align="right" style="padding:10px 0;border-top:1px solid #e6e6e6;font-size:14px;line-height:20px;color:#1a1a1a;" valign="top">R185.00</td>
+              </tr>
+
+              <tr>
+                <td width="90" style="padding:10px 0;border-top:1px solid #e6e6e6;font-size:14px;line-height:20px;color:#666666;" valign="top">Wed 14 Oct</td>
+                <td style="padding:10px 0;border-top:1px solid #e6e6e6;font-size:14px;line-height:20px;color:#1a1a1a;" valign="top">Google One 100GB</td>
+                <td align="right" style="padding:10px 0;border-top:1px solid #e6e6e6;font-size:14px;line-height:20px;color:#1a1a1a;" valign="top">R29.99</td>
+              </tr>
+
+              <tr>
+                <td width="90" style="padding:10px 0;border-top:1px solid #e6e6e6;font-size:14px;line-height:20px;color:#666666;" valign="top">Wed 14 Oct</td>
+                <td style="padding:10px 0;border-top:1px solid #e6e6e6;font-size:14px;line-height:20px;color:#1a1a1a;" valign="top">Spotify Family</td>
+                <td align="right" style="padding:10px 0;border-top:1px solid #e6e6e6;font-size:14px;line-height:20px;color:#1a1a1a;" valign="top">R119.99</td>
+              </tr>
+
+              <tr>
+                <td width="90" style="padding:10px 0;border-top:1px solid #e6e6e6;font-size:14px;line-height:20px;color:#666666;" valign="top">Tue 20 Oct</td>
+                <td style="padding:10px 0;border-top:1px solid #e6e6e6;font-size:14px;line-height:20px;color:#1a1a1a;" valign="top">Weekly veg box</td>
+                <td align="right" style="padding:10px 0;border-top:1px solid #e6e6e6;font-size:14px;line-height:20px;color:#1a1a1a;" valign="top">R185.00</td>
+              </tr>
+
+              <tr>
+                <td width="90" style="padding:10px 0;border-top:1px solid #e6e6e6;font-size:14px;line-height:20px;color:#666666;" valign="top">Tue 27 Oct</td>
+                <td style="padding:10px 0;border-top:1px solid #e6e6e6;font-size:14px;line-height:20px;color:#1a1a1a;" valign="top">Weekly veg box</td>
+                <td align="right" style="padding:10px 0;border-top:1px solid #e6e6e6;font-size:14px;line-height:20px;color:#1a1a1a;" valign="top">R185.00</td>
+              </tr>
+
+              <!-- total -->
+              <tr>
+                <td width="90" style="padding:10px 0 0 0;border-top:1px solid #1a1a1a;">&nbsp;</td>
+                <td style="padding:10px 0 0 0;border-top:1px solid #1a1a1a;font-size:14px;line-height:20px;font-weight:600;color:#1a1a1a;">Total</td>
+                <td align="right" style="padding:10px 0 0 0;border-top:1px solid #1a1a1a;font-size:14px;line-height:20px;font-weight:600;color:#1a1a1a;">R1,836.98</td>
+              </tr>
+
+            </table>
+          </td>
+        </tr>
+
+        <!-- categories -->
+        <tr>
+          <td style="font-size:14px;line-height:21px;font-weight:600;color:#1a1a1a;padding-top:32px;padding-bottom:2px;">
+            Monthly average by category
+          </td>
+        </tr>
+        <tr>
+          <td style="font-size:13px;line-height:19px;color:#666666;padding-bottom:10px;">
+            What each category costs per month on average.
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
+
+              <tr>
+                <td style="padding:10px 0;border-top:1px solid #e6e6e6;font-size:14px;line-height:20px;color:#1a1a1a;">Food</td>
+                <td align="right" style="padding:10px 0;border-top:1px solid #e6e6e6;font-size:14px;line-height:20px;color:#1a1a1a;">R801.67</td>
+              </tr>
+              <tr>
+                <td style="padding:10px 0;border-top:1px solid #e6e6e6;font-size:14px;line-height:20px;color:#1a1a1a;">Fitness</td>
+                <td align="right" style="padding:10px 0;border-top:1px solid #e6e6e6;font-size:14px;line-height:20px;color:#1a1a1a;">R649.00</td>
+              </tr>
+              <tr>
+                <td style="padding:10px 0;border-top:1px solid #e6e6e6;font-size:14px;line-height:20px;color:#1a1a1a;">Streaming</td>
+                <td align="right" style="padding:10px 0;border-top:1px solid #e6e6e6;font-size:14px;line-height:20px;color:#1a1a1a;">R417.99</td>
+              </tr>
+              <tr>
+                <td style="padding:10px 0;border-top:1px solid #e6e6e6;font-size:14px;line-height:20px;color:#1a1a1a;">Insurance</td>
+                <td align="right" style="padding:10px 0;border-top:1px solid #e6e6e6;font-size:14px;line-height:20px;color:#1a1a1a;">R150.00</td>
+              </tr>
+              <tr>
+                <td style="padding:10px 0;border-top:1px solid #e6e6e6;font-size:14px;line-height:20px;color:#1a1a1a;">Software</td>
+                <td align="right" style="padding:10px 0;border-top:1px solid #e6e6e6;font-size:14px;line-height:20px;color:#1a1a1a;">R138.24</td>
+              </tr>
+
+              <!-- total -->
+              <tr>
+                <td style="padding:10px 0 0 0;border-top:1px solid #1a1a1a;font-size:14px;line-height:20px;font-weight:600;color:#1a1a1a;">Total</td>
+                <td align="right" style="padding:10px 0 0 0;border-top:1px solid #1a1a1a;font-size:14px;line-height:20px;font-weight:600;color:#1a1a1a;">R2,156.90</td>
+              </tr>
+
+            </table>
+          </td>
+        </tr>
+
+      </table>
+
+    </td>
+  </tr>
+</table>
+
+</body>
+</html>

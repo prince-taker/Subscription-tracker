@@ -1,0 +1,23 @@
+# Secrets and private financial data: never commit these
+.env
+*.db
+*.db-journal
+*.sqlite3
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+.pytest_cache/
+
+# Editors / OS
+.DS_Store
+.idea/workspace.xml
+
+# Dry-run HTML previews (contain your real subscription data)
+preview_alert.html
+preview_summary.html
+
+# Backups contain your private financial data
+backups/

@@ -1,0 +1,6 @@
+streamlit>=1.50
+pandas>=2.0
+python-dotenv>=1.0
+pytest>=8.0
+# Turso driver. Not libsql-experimental (no Windows) or libsql-client (deprecated).
+libsql>=0.1.11
